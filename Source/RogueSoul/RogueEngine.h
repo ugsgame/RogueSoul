@@ -2,10 +2,10 @@
 
 #pragma once
 
-#include "ShooterEngine.generated.h"
+#include "RogueEngine.generated.h"
 
 UCLASS()
-class ROGUESOUL_API UShooterEngine : public UGameEngine
+class ROGUESOUL_API URogueEngine : public UGameEngine
 {
 	GENERATED_UCLASS_BODY()
 

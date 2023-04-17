@@ -5,7 +5,7 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "ShooterGame",
+			"Name": "RogueSoul",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [

@@ -5,15 +5,15 @@
 =============================================================================*/
 
 #include "RogueSoul.h"
-#include "ShooterEngine.h"
+#include "RogueEngine.h"
 #include "ShooterGameInstance.h"
 
-UShooterEngine::UShooterEngine(const FObjectInitializer& ObjectInitializer)
+URogueEngine::URogueEngine(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
 }
 
-void UShooterEngine::Init(IEngineLoop* InEngineLoop)
+void URogueEngine::Init(IEngineLoop* InEngineLoop)
 {
 	// Note: Lots of important things happen in Super::Init(), including spawning the player pawn in-game and
 	// creating the renderer.
@@ -21,7 +21,7 @@ void UShooterEngine::Init(IEngineLoop* InEngineLoop)
 }
 
 
-void UShooterEngine::HandleNetworkFailure(UWorld *World, UNetDriver *NetDriver, ENetworkFailure::Type FailureType, const FString& ErrorString)
+void URogueEngine::HandleNetworkFailure(UWorld *World, UNetDriver *NetDriver, ENetworkFailure::Type FailureType, const FString& ErrorString)
 {
 	// Determine if we need to change the King state based on network failures.
 
